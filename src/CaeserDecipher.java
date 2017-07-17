@@ -39,8 +39,8 @@ public class CaeserDecipher{
 	 public static void main(String[]args){
 		 Scanner console = new Scanner(System.in);
 		 System.out.println("What phrase do you want do decrypt?");
-		 String input = console.nextLine();
-		 StringBuilder choice = new StringBuilder(input);
+		 String phrase = console.nextLine();
+		 StringBuilder choice = new StringBuilder(phrase);
 		 count(choice);
 		 char largest = decrypt(choice);
 		 int shift = alpha.indexOf(largest) - 4;
